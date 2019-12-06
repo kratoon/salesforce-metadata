@@ -32,3 +32,4 @@ export function writeMetadataXML(file: string, metadata: MetadataFile, options: 
 }
 
 export * from "./metadata-types";
+export {OptionsV2} from "xml2js";
