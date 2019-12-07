@@ -1,7 +1,8 @@
 /* tslint:disable */
 
-/* This file was created via "salesforce-wsdl-consumer" on Fri Dec 06 2019 23:22:56 GMT+0100 (CET).
-Do not make any changes here as it can be anytime regenerated. */
+/* This file was created via "salesforce-wsdl-consumer" on Sat Dec 07 2019 14:24:41 GMT+0100 (CET).
+Do not make any changes here as it can be anytime regenerated. 
+Issues: https://github.com/kratoon3/salesforce-wsdl-consumer/issues */
 
 
 export type AccessMethod = "Get" | "Post";

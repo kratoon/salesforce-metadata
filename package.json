@@ -1,13 +1,14 @@
 {
   "name": "salesforce-metadata",
   "version": "0.0.1",
-  "description": "Read and write Salesforce Metadata files with types.",
+  "description": "Read and write Salesforce Metadata files.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc && npm run gen && tsc",
     "watch": "tsc --watch",
     "gen": "node dist/generate.js",
+    "prepublish": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -15,7 +16,8 @@
     "force.com",
     "metadata",
     "ts",
-    "types"
+    "types",
+    "salesforcedx"
   ],
   "author": "Ondřej Kratochvíl <ondrakratochvil96@gmail.com>",
   "license": "apache-2.0",
@@ -26,22 +28,21 @@
   ],
   "dependencies": {
     "fs-extra": "^8.1.0",
-    "xml2js": "^0.4.22"
+    "xml2js": "^0.4.22",
+    "salesforce-wsdl-consumer": "^0.0.8"
   },
   "devDependencies": {
     "@types/fs-extra": "^8.0.1",
     "@types/xml2js": "^0.4.5",
-    "salesforce-wsdl-consumer": "^0.0.3",
     "tslint": "^5.20.1",
     "tslint-microsoft-contrib": "^5.2.1",
     "typescript": "^3.7.2"
   },
-  "prepublish": "npm run build",
   "bugs": {
     "url": "https://github.com/kratoon3/salesforce-metadata/issues"
   },
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/kratoon3/salesforce-metadata.git"
+    "type": "git",
+    "url": "https://github.com/kratoon3/salesforce-metadata.git"
   }
 }

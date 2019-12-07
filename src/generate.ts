@@ -5,4 +5,3 @@ import {generateTypesFromMetadataWSDL} from "salesforce-wsdl-consumer";
 generateTypesFromMetadataWSDL({
     outputFile: path.join("src", "metadata-types.ts")
 });
-
