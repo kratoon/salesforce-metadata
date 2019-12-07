@@ -2,7 +2,7 @@
 
 [![npm version](https://badge.fury.io/js/salesforce-metadata.svg)](https://badge.fury.io/js/salesforce-metadata)
 
-Read and write Salesforce Metadata files in TypeScript or JavaScript.
+Read and write Salesforce Metadata files in TypeScript.
 
 WARNING: this project is not stable yet and any API can change.
 
@@ -12,12 +12,12 @@ All the
 were generated from
 [salesforce-wsdl-consumer](https://github.com/kratoon3/salesforce-wsdl-consumer).
 
-Every property is optional and explicitArray for writing an XML file is set to true 
+Every property is optional and explicitArray for reading an XML file is set to true 
 (always put child nodes in an array).
 
 ## Usage
-Currently, this version can only read and write XML Metadata files.
-It means that even though the Profile type extends Metadata type, the "fullName" property
+Currently, this version can only read and write XML Metadata files,
+i.e. even though the Profile type extends Metadata type, the "fullName" property
 from Metadata type won't be processed while reading and writing a file.
 
 Exported functions:
