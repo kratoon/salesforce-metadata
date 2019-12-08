@@ -2,14 +2,15 @@
   "name": "salesforce-metadata",
   "version": "0.0.3",
   "description": "Read and write Salesforce Metadata files.",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
   "scripts": {
     "build": "tsc && npm run gen && tsc",
     "watch": "tsc --watch",
-    "gen": "node dist/generate.js",
-    "prepublish": "npm run build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "gen": "node dist/src/generate.js",
+    "prepublish": "npm run build && npm t",
+    "test": "jest",
+    "coverage": "jest --coverage"
   },
   "keywords": [
     "salesforce",
@@ -29,15 +30,19 @@
   "dependencies": {
     "fs-extra": "^8.1.0",
     "xml2js": "^0.4.22",
-    "salesforce-wsdl-consumer": "^0.0.8"
+    "salesforce-wsdl-consumer": "^0.0.11"
   },
   "devDependencies": {
     "@types/fs-extra": "^8.0.1",
+    "@types/jest": "^24.0.23",
     "@types/xml2js": "^0.4.5",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.2.0",
     "tslint": "^5.20.1",
     "tslint-microsoft-contrib": "^5.2.1",
     "typescript": "^3.7.2"
   },
+  "homepage": "https://github.com/kratoon3/salesforce-metadata",
   "bugs": {
     "url": "https://github.com/kratoon3/salesforce-metadata/issues"
   },

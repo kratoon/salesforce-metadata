@@ -1,7 +1,8 @@
 /* tslint:disable */
 
-/* This file was created via "salesforce-wsdl-consumer" on Sat Dec 07 2019 20:35:37 GMT+0100 (CET).
+/* This file was created via "salesforce-wsdl-consumer" on Sun Dec 08 2019 16:02:20 GMT+0100 (CET).
 Do not make any changes here as it can be anytime regenerated. 
+Project: https://github.com/kratoon3/salesforce-wsdl-consumer
 Issues: https://github.com/kratoon3/salesforce-wsdl-consumer/issues */
 
 
