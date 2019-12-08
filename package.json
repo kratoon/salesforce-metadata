@@ -1,13 +1,13 @@
 {
   "name": "salesforce-metadata",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Read and write Salesforce Metadata files.",
-  "main": "dist/src/index.js",
-  "types": "dist/src/index.d.ts",
+  "main": "src/index.js",
+  "types": "src/index.d.ts",
   "scripts": {
     "build": "tsc && npm run gen && tsc",
     "watch": "tsc --watch",
-    "gen": "node dist/src/generate.js",
+    "gen": "node src/generate.js",
     "prepublish": "npm run build && npm t",
     "test": "jest",
     "coverage": "jest --coverage"
@@ -23,7 +23,6 @@
   "author": "Ondřej Kratochvíl <ondrakratochvil96@gmail.com>",
   "license": "apache-2.0",
   "files": [
-    "dist/",
     "src/",
     "!lib/**/__tests__/"
   ],
