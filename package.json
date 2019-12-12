@@ -29,7 +29,7 @@
   "dependencies": {
     "fs-extra": "^8.1.0",
     "xml2js": "^0.4.22",
-    "salesforce-wsdl-consumer": "^0.0.12"
+    "salesforce-wsdl-consumer": "^0.0.13"
   },
   "devDependencies": {
     "@types/fs-extra": "^8.0.1",
