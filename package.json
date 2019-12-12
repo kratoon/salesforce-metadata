@@ -8,7 +8,7 @@
     "build": "tsc && npm run gen && tsc",
     "watch": "tsc --watch",
     "gen": "node src/generate.js",
-    "prepublish": "npm run build && npm t",
+    "prepublishOnly": "npm run build && npm t",
     "test": "jest",
     "coverage": "jest --coverage"
   },
@@ -21,7 +21,7 @@
     "salesforcedx"
   ],
   "author": "Ondřej Kratochvíl <ondrakratochvil96@gmail.com>",
-  "license": "apache-2.0",
+  "license": "Apache-2.0",
   "files": [
     "src/",
     "!lib/**/__tests__/"
