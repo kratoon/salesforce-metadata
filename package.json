@@ -1,6 +1,6 @@
 {
   "name": "salesforce-metadata",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Read and write Salesforce Metadata files.",
   "main": "src/index.js",
   "types": "src/index.d.ts",
@@ -8,7 +8,7 @@
     "build": "tsc && npm run gen && tsc",
     "watch": "tsc --watch",
     "gen": "node src/generate.js",
-    "prepublish": "npm run build && npm t",
+    "prepublishOnly": "npm run build && npm t",
     "test": "jest",
     "coverage": "jest --coverage"
   },
@@ -21,7 +21,7 @@
     "salesforcedx"
   ],
   "author": "Ondřej Kratochvíl <ondrakratochvil96@gmail.com>",
-  "license": "apache-2.0",
+  "license": "Apache-2.0",
   "files": [
     "src/",
     "!lib/**/__tests__/"
@@ -29,7 +29,7 @@
   "dependencies": {
     "fs-extra": "^8.1.0",
     "xml2js": "^0.4.22",
-    "salesforce-wsdl-consumer": "^0.0.11"
+    "salesforce-wsdl-consumer": "^0.0.13"
   },
   "devDependencies": {
     "@types/fs-extra": "^8.0.1",
