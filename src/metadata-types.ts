@@ -1,6 +1,6 @@
 /* tslint:disable */
 
-/* This file was created via "salesforce-wsdl-consumer" on Mon Dec 09 2019 00:04:09 GMT+0100 (CET).
+/* This file was created via "salesforce-wsdl-consumer".
 Do not make any changes here as it can be anytime regenerated. 
 Project: https://github.com/kratoon3/salesforce-wsdl-consumer
 Issues: https://github.com/kratoon3/salesforce-wsdl-consumer/issues */
@@ -7477,3 +7477,642 @@ export interface WorkspaceMapping {
     fieldName?: string[];
     tab?: string[];
 }
+
+export type MetadataType = 
+	"AccessControlPolicy" |
+	"AccountRelationshipShareRule" |
+	"AccountSettings" |
+	"ActionLinkGroupTemplate" |
+	"ActionPlanTemplate" |
+	"ActionsSettings" |
+	"ActivitiesSettings" |
+	"AddressSettings" |
+	"AnalyticSnapshot" |
+	"AnalyticsSettings" |
+	"AnimationRule" |
+	"ApexClass" |
+	"ApexComponent" |
+	"ApexPage" |
+	"ApexSettings" |
+	"ApexTestSuite" |
+	"ApexTrigger" |
+	"AppExperienceSettings" |
+	"AppMenu" |
+	"AppointmentSchedulingPolicy" |
+	"ApprovalProcess" |
+	"ArchiveSettings" |
+	"AssignmentRule" |
+	"AssignmentRules" |
+	"Audience" |
+	"AuraDefinitionBundle" |
+	"AuthProvider" |
+	"AutoResponseRule" |
+	"AutoResponseRules" |
+	"BlockchainSettings" |
+	"Bot" |
+	"BotSettings" |
+	"BotVersion" |
+	"BrandingSet" |
+	"BusinessHoursEntry" |
+	"BusinessHoursSettings" |
+	"BusinessProcess" |
+	"CallCenter" |
+	"CampaignInfluenceModel" |
+	"CampaignSettings" |
+	"CanvasMetadata" |
+	"CaseClassificationSettings" |
+	"CaseSettings" |
+	"CaseSubjectParticle" |
+	"Certificate" |
+	"ChannelLayout" |
+	"ChatterAnswersSettings" |
+	"ChatterEmailsMDSettings" |
+	"ChatterExtension" |
+	"ChatterSettings" |
+	"CleanDataService" |
+	"CMSConnectSource" |
+	"CommandAction" |
+	"CommunitiesSettings" |
+	"Community" |
+	"CommunityTemplateDefinition" |
+	"CommunityThemeDefinition" |
+	"CompactLayout" |
+	"CompanySettings" |
+	"ConnectedApp" |
+	"ConnectedAppSettings" |
+	"ContentAsset" |
+	"ContentSettings" |
+	"ContractSettings" |
+	"CorsWhitelistOrigin" |
+	"CspTrustedSite" |
+	"CurrencySettings" |
+	"CustomApplication" |
+	"CustomApplicationComponent" |
+	"CustomFeedFilter" |
+	"CustomField" |
+	"CustomHelpMenuSection" |
+	"CustomLabel" |
+	"CustomLabels" |
+	"CustomMetadata" |
+	"CustomNotificationType" |
+	"CustomObject" |
+	"CustomObjectTranslation" |
+	"CustomPageWebLink" |
+	"CustomPermission" |
+	"CustomSite" |
+	"CustomTab" |
+	"CustomValue" |
+	"Dashboard" |
+	"DashboardFolder" |
+	"DataCategoryGroup" |
+	"DataDotComSettings" |
+	"DelegateGroup" |
+	"DeploymentSettings" |
+	"DevHubSettings" |
+	"DiscoverySettings" |
+	"Document" |
+	"DocumentFolder" |
+	"DocumentType" |
+	"DuplicateRule" |
+	"EACSettings" |
+	"EclairGeoData" |
+	"EmailAdministrationSettings" |
+	"EmailFolder" |
+	"EmailIntegrationSettings" |
+	"EmailServicesFunction" |
+	"EmailTemplate" |
+	"EmailTemplateSettings" |
+	"EmbeddedServiceBranding" |
+	"EmbeddedServiceConfig" |
+	"EmbeddedServiceFlowConfig" |
+	"EmbeddedServiceLiveAgent" |
+	"EmbeddedServiceMenuSettings" |
+	"EncryptionKeySettings" |
+	"EnhancedNotesSettings" |
+	"EntitlementProcess" |
+	"EntitlementSettings" |
+	"EntitlementTemplate" |
+	"EntityImplements" |
+	"EscalationRule" |
+	"EscalationRules" |
+	"EssentialsSettings" |
+	"EssentialsTrialOrgSettings" |
+	"EventSettings" |
+	"ExperienceBundleSettings" |
+	"ExternalDataSource" |
+	"ExternalServiceRegistration" |
+	"ExternalServicesSettings" |
+	"FieldServiceSettings" |
+	"FieldSet" |
+	"FilesConnectSettings" |
+	"FileUploadAndDownloadSecuritySettings" |
+	"FlexiPage" |
+	"Flow" |
+	"FlowCategory" |
+	"FlowDefinition" |
+	"FlowSettings" |
+	"Folder" |
+	"ForecastingSettings" |
+	"Form" |
+	"FormSection" |
+	"FormulaSettings" |
+	"GlobalValueSet" |
+	"GlobalValueSetTranslation" |
+	"GoogleAppsSettings" |
+	"Group" |
+	"HighVelocitySalesSettings" |
+	"HomePageComponent" |
+	"HomePageLayout" |
+	"IdeasSettings" |
+	"Index" |
+	"IndustriesManufacturingSettings" |
+	"IndustriesSettings" |
+	"InstalledPackage" |
+	"IntegrationHubSettings" |
+	"IntegrationHubSettingsType" |
+	"InvocableActionSettings" |
+	"IoTSettings" |
+	"IsvHammerSettings" |
+	"KeywordList" |
+	"KnowledgeSettings" |
+	"LanguageSettings" |
+	"Layout" |
+	"LeadConfigSettings" |
+	"LeadConvertSettings" |
+	"Letterhead" |
+	"LicenseDefinition" |
+	"LightningBolt" |
+	"LightningComponentBundle" |
+	"LightningExperienceSettings" |
+	"LightningExperienceTheme" |
+	"LightningMessageChannel" |
+	"LightningOnboardingConfig" |
+	"ListView" |
+	"LiveAgentSettings" |
+	"LiveChatAgentConfig" |
+	"LiveChatButton" |
+	"LiveChatDeployment" |
+	"LiveChatSensitiveDataRule" |
+	"LiveMessageSettings" |
+	"MacroSettings" |
+	"ManagedContentType" |
+	"ManagedTopic" |
+	"ManagedTopics" |
+	"MapsAndLocationSettings" |
+	"MatchingRule" |
+	"MatchingRules" |
+	"Metadata" |
+	"MetadataWithContent" |
+	"MilestoneType" |
+	"MlDomain" |
+	"MobileApplicationDetail" |
+	"MobileSettings" |
+	"ModerationRule" |
+	"MutingPermissionSet" |
+	"MyDomainSettings" |
+	"NamedCredential" |
+	"NameSettings" |
+	"NavigationMenu" |
+	"Network" |
+	"NetworkBranding" |
+	"NotificationsSettings" |
+	"OauthCustomScope" |
+	"ObjectLinkingSettings" |
+	"OmniChannelSettings" |
+	"OpportunitySettings" |
+	"Orchestration" |
+	"OrchestrationContext" |
+	"OrderManagementSettings" |
+	"OrderSettings" |
+	"OrgPreferenceSettings" |
+	"OrgSettings" |
+	"Package" |
+	"PardotEinsteinSettings" |
+	"PardotSettings" |
+	"PartyDataModelSettings" |
+	"PathAssistant" |
+	"PathAssistantSettings" |
+	"PermissionSet" |
+	"PermissionSetGroup" |
+	"PersonListSettings" |
+	"PicklistSettings" |
+	"PicklistValue" |
+	"PlatformActionList" |
+	"PlatformCachePartition" |
+	"PlatformEncryptionSettings" |
+	"PlatformEventChannel" |
+	"PlatformEventChannelMember" |
+	"Portal" |
+	"PostTemplate" |
+	"PresenceDeclineReason" |
+	"PresenceUserConfig" |
+	"PrivacySettings" |
+	"PrivateConnection" |
+	"ProductSettings" |
+	"Profile" |
+	"ProfilePasswordPolicy" |
+	"ProfileSessionSetting" |
+	"Prompt" |
+	"Queue" |
+	"QueueRoutingConfig" |
+	"QuickAction" |
+	"QuoteSettings" |
+	"RecommendationStrategy" |
+	"RecordActionDeployment" |
+	"RecordPageSettings" |
+	"RecordType" |
+	"RemoteSiteSetting" |
+	"Report" |
+	"ReportFolder" |
+	"ReportType" |
+	"RestrictionRule" |
+	"RetailExecutionSettings" |
+	"Role" |
+	"RoleOrTerritory" |
+	"SamlSsoConfig" |
+	"SchemaSettings" |
+	"Scontrol" |
+	"SearchSettings" |
+	"SecuritySettings" |
+	"ServiceChannel" |
+	"ServicePresenceStatus" |
+	"SharingBaseRule" |
+	"SharingCriteriaRule" |
+	"SharingGuestRule" |
+	"SharingOwnerRule" |
+	"SharingReason" |
+	"SharingRules" |
+	"SharingSet" |
+	"SharingSettings" |
+	"SharingTerritoryRule" |
+	"SiteDotCom" |
+	"SiteSettings" |
+	"Skill" |
+	"SocialCustomerServiceSettings" |
+	"SocialProfileSettings" |
+	"StandardValue" |
+	"StandardValueSet" |
+	"StandardValueSetTranslation" |
+	"StaticResource" |
+	"SurveySettings" |
+	"SynonymDictionary" |
+	"SystemNotificationSettings" |
+	"Territory" |
+	"Territory2" |
+	"Territory2Model" |
+	"Territory2Rule" |
+	"Territory2Settings" |
+	"Territory2Type" |
+	"TimeSheetTemplate" |
+	"TopicsForObjects" |
+	"TrailheadSettings" |
+	"TransactionSecurityPolicy" |
+	"Translations" |
+	"UIObjectRelationConfig" |
+	"UiPlugin" |
+	"UserCriteria" |
+	"UserEngagementSettings" |
+	"UserInterfaceSettings" |
+	"UserManagementSettings" |
+	"ValidationRule" |
+	"VoiceSettings" |
+	"WaveApplication" |
+	"WaveDashboard" |
+	"WaveDataflow" |
+	"WaveDataset" |
+	"WaveLens" |
+	"WaveRecipe" |
+	"WaveTemplateBundle" |
+	"WaveXmd" |
+	"WebLink" |
+	"WorkDotComSettings" |
+	"Workflow" |
+	"WorkflowAction" |
+	"WorkflowAlert" |
+	"WorkflowFieldUpdate" |
+	"WorkflowFlowAction" |
+	"WorkflowKnowledgePublish" |
+	"WorkflowOutboundMessage" |
+	"WorkflowRule" |
+	"WorkflowSend" |
+	"WorkflowTask";
+
+export const metadataTypes: MetadataType[] = [
+	"AccessControlPolicy",
+	"AccountRelationshipShareRule",
+	"AccountSettings",
+	"ActionLinkGroupTemplate",
+	"ActionPlanTemplate",
+	"ActionsSettings",
+	"ActivitiesSettings",
+	"AddressSettings",
+	"AnalyticSnapshot",
+	"AnalyticsSettings",
+	"AnimationRule",
+	"ApexClass",
+	"ApexComponent",
+	"ApexPage",
+	"ApexSettings",
+	"ApexTestSuite",
+	"ApexTrigger",
+	"AppExperienceSettings",
+	"AppMenu",
+	"AppointmentSchedulingPolicy",
+	"ApprovalProcess",
+	"ArchiveSettings",
+	"AssignmentRule",
+	"AssignmentRules",
+	"Audience",
+	"AuraDefinitionBundle",
+	"AuthProvider",
+	"AutoResponseRule",
+	"AutoResponseRules",
+	"BlockchainSettings",
+	"Bot",
+	"BotSettings",
+	"BotVersion",
+	"BrandingSet",
+	"BusinessHoursEntry",
+	"BusinessHoursSettings",
+	"BusinessProcess",
+	"CallCenter",
+	"CampaignInfluenceModel",
+	"CampaignSettings",
+	"CanvasMetadata",
+	"CaseClassificationSettings",
+	"CaseSettings",
+	"CaseSubjectParticle",
+	"Certificate",
+	"ChannelLayout",
+	"ChatterAnswersSettings",
+	"ChatterEmailsMDSettings",
+	"ChatterExtension",
+	"ChatterSettings",
+	"CleanDataService",
+	"CMSConnectSource",
+	"CommandAction",
+	"CommunitiesSettings",
+	"Community",
+	"CommunityTemplateDefinition",
+	"CommunityThemeDefinition",
+	"CompactLayout",
+	"CompanySettings",
+	"ConnectedApp",
+	"ConnectedAppSettings",
+	"ContentAsset",
+	"ContentSettings",
+	"ContractSettings",
+	"CorsWhitelistOrigin",
+	"CspTrustedSite",
+	"CurrencySettings",
+	"CustomApplication",
+	"CustomApplicationComponent",
+	"CustomFeedFilter",
+	"CustomField",
+	"CustomHelpMenuSection",
+	"CustomLabel",
+	"CustomLabels",
+	"CustomMetadata",
+	"CustomNotificationType",
+	"CustomObject",
+	"CustomObjectTranslation",
+	"CustomPageWebLink",
+	"CustomPermission",
+	"CustomSite",
+	"CustomTab",
+	"CustomValue",
+	"Dashboard",
+	"DashboardFolder",
+	"DataCategoryGroup",
+	"DataDotComSettings",
+	"DelegateGroup",
+	"DeploymentSettings",
+	"DevHubSettings",
+	"DiscoverySettings",
+	"Document",
+	"DocumentFolder",
+	"DocumentType",
+	"DuplicateRule",
+	"EACSettings",
+	"EclairGeoData",
+	"EmailAdministrationSettings",
+	"EmailFolder",
+	"EmailIntegrationSettings",
+	"EmailServicesFunction",
+	"EmailTemplate",
+	"EmailTemplateSettings",
+	"EmbeddedServiceBranding",
+	"EmbeddedServiceConfig",
+	"EmbeddedServiceFlowConfig",
+	"EmbeddedServiceLiveAgent",
+	"EmbeddedServiceMenuSettings",
+	"EncryptionKeySettings",
+	"EnhancedNotesSettings",
+	"EntitlementProcess",
+	"EntitlementSettings",
+	"EntitlementTemplate",
+	"EntityImplements",
+	"EscalationRule",
+	"EscalationRules",
+	"EssentialsSettings",
+	"EssentialsTrialOrgSettings",
+	"EventSettings",
+	"ExperienceBundleSettings",
+	"ExternalDataSource",
+	"ExternalServiceRegistration",
+	"ExternalServicesSettings",
+	"FieldServiceSettings",
+	"FieldSet",
+	"FilesConnectSettings",
+	"FileUploadAndDownloadSecuritySettings",
+	"FlexiPage",
+	"Flow",
+	"FlowCategory",
+	"FlowDefinition",
+	"FlowSettings",
+	"Folder",
+	"ForecastingSettings",
+	"Form",
+	"FormSection",
+	"FormulaSettings",
+	"GlobalValueSet",
+	"GlobalValueSetTranslation",
+	"GoogleAppsSettings",
+	"Group",
+	"HighVelocitySalesSettings",
+	"HomePageComponent",
+	"HomePageLayout",
+	"IdeasSettings",
+	"Index",
+	"IndustriesManufacturingSettings",
+	"IndustriesSettings",
+	"InstalledPackage",
+	"IntegrationHubSettings",
+	"IntegrationHubSettingsType",
+	"InvocableActionSettings",
+	"IoTSettings",
+	"IsvHammerSettings",
+	"KeywordList",
+	"KnowledgeSettings",
+	"LanguageSettings",
+	"Layout",
+	"LeadConfigSettings",
+	"LeadConvertSettings",
+	"Letterhead",
+	"LicenseDefinition",
+	"LightningBolt",
+	"LightningComponentBundle",
+	"LightningExperienceSettings",
+	"LightningExperienceTheme",
+	"LightningMessageChannel",
+	"LightningOnboardingConfig",
+	"ListView",
+	"LiveAgentSettings",
+	"LiveChatAgentConfig",
+	"LiveChatButton",
+	"LiveChatDeployment",
+	"LiveChatSensitiveDataRule",
+	"LiveMessageSettings",
+	"MacroSettings",
+	"ManagedContentType",
+	"ManagedTopic",
+	"ManagedTopics",
+	"MapsAndLocationSettings",
+	"MatchingRule",
+	"MatchingRules",
+	"Metadata",
+	"MetadataWithContent",
+	"MilestoneType",
+	"MlDomain",
+	"MobileApplicationDetail",
+	"MobileSettings",
+	"ModerationRule",
+	"MutingPermissionSet",
+	"MyDomainSettings",
+	"NamedCredential",
+	"NameSettings",
+	"NavigationMenu",
+	"Network",
+	"NetworkBranding",
+	"NotificationsSettings",
+	"OauthCustomScope",
+	"ObjectLinkingSettings",
+	"OmniChannelSettings",
+	"OpportunitySettings",
+	"Orchestration",
+	"OrchestrationContext",
+	"OrderManagementSettings",
+	"OrderSettings",
+	"OrgPreferenceSettings",
+	"OrgSettings",
+	"Package",
+	"PardotEinsteinSettings",
+	"PardotSettings",
+	"PartyDataModelSettings",
+	"PathAssistant",
+	"PathAssistantSettings",
+	"PermissionSet",
+	"PermissionSetGroup",
+	"PersonListSettings",
+	"PicklistSettings",
+	"PicklistValue",
+	"PlatformActionList",
+	"PlatformCachePartition",
+	"PlatformEncryptionSettings",
+	"PlatformEventChannel",
+	"PlatformEventChannelMember",
+	"Portal",
+	"PostTemplate",
+	"PresenceDeclineReason",
+	"PresenceUserConfig",
+	"PrivacySettings",
+	"PrivateConnection",
+	"ProductSettings",
+	"Profile",
+	"ProfilePasswordPolicy",
+	"ProfileSessionSetting",
+	"Prompt",
+	"Queue",
+	"QueueRoutingConfig",
+	"QuickAction",
+	"QuoteSettings",
+	"RecommendationStrategy",
+	"RecordActionDeployment",
+	"RecordPageSettings",
+	"RecordType",
+	"RemoteSiteSetting",
+	"Report",
+	"ReportFolder",
+	"ReportType",
+	"RestrictionRule",
+	"RetailExecutionSettings",
+	"Role",
+	"RoleOrTerritory",
+	"SamlSsoConfig",
+	"SchemaSettings",
+	"Scontrol",
+	"SearchSettings",
+	"SecuritySettings",
+	"ServiceChannel",
+	"ServicePresenceStatus",
+	"SharingBaseRule",
+	"SharingCriteriaRule",
+	"SharingGuestRule",
+	"SharingOwnerRule",
+	"SharingReason",
+	"SharingRules",
+	"SharingSet",
+	"SharingSettings",
+	"SharingTerritoryRule",
+	"SiteDotCom",
+	"SiteSettings",
+	"Skill",
+	"SocialCustomerServiceSettings",
+	"SocialProfileSettings",
+	"StandardValue",
+	"StandardValueSet",
+	"StandardValueSetTranslation",
+	"StaticResource",
+	"SurveySettings",
+	"SynonymDictionary",
+	"SystemNotificationSettings",
+	"Territory",
+	"Territory2",
+	"Territory2Model",
+	"Territory2Rule",
+	"Territory2Settings",
+	"Territory2Type",
+	"TimeSheetTemplate",
+	"TopicsForObjects",
+	"TrailheadSettings",
+	"TransactionSecurityPolicy",
+	"Translations",
+	"UIObjectRelationConfig",
+	"UiPlugin",
+	"UserCriteria",
+	"UserEngagementSettings",
+	"UserInterfaceSettings",
+	"UserManagementSettings",
+	"ValidationRule",
+	"VoiceSettings",
+	"WaveApplication",
+	"WaveDashboard",
+	"WaveDataflow",
+	"WaveDataset",
+	"WaveLens",
+	"WaveRecipe",
+	"WaveTemplateBundle",
+	"WaveXmd",
+	"WebLink",
+	"WorkDotComSettings",
+	"Workflow",
+	"WorkflowAction",
+	"WorkflowAlert",
+	"WorkflowFieldUpdate",
+	"WorkflowFlowAction",
+	"WorkflowKnowledgePublish",
+	"WorkflowOutboundMessage",
+	"WorkflowRule",
+	"WorkflowSend",
+	"WorkflowTask",
+];
