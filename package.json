@@ -1,6 +1,6 @@
 {
   "name": "salesforce-metadata",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Read and write Salesforce Metadata files.",
   "main": "src/index.js",
   "types": "src/index.d.ts",
