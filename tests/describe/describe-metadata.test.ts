@@ -15,7 +15,7 @@ describe("describe-metadata", () => {
         expect(customObject?.metaFile).toBe(false);
         expect(customObject?.suffix).toBe("object");
         expect(customObject?.xmlName).toBe("CustomObject");
-        expect(customObject?.childXmlNames.toString()).toBe([
+        expect(customObject?.childXmlNames?.toString()).toBe([
             "CustomField",
             "Index",
             "BusinessProcess",
