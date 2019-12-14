@@ -1,0 +1,49 @@
+{
+  "metadataObjects": [
+    {
+      "directoryName": "fields",
+      "suffix": "field",
+      "xmlName": "CustomField"
+    },
+    {
+      "directoryName": "businessProcesses",
+      "suffix": "businessProcess",
+      "xmlName": "BusinessProcess"
+    },
+    {
+      "directoryName": "compactLayouts",
+      "suffix": "compactLayout",
+      "xmlName": "CompactLayout"
+    },
+    {
+      "directoryName": "sharingReasons",
+      "suffix": "sharingReason",
+      "xmlName": "SharingReason"
+    },
+    {
+      "directoryName": "recordTypes",
+      "suffix": "recordType",
+      "xmlName": "RecordType"
+    },
+    {
+      "directoryName": "webLinks",
+      "suffix": "webLink",
+      "xmlName": "WebLink"
+    },
+    {
+      "directoryName": "validationRules",
+      "suffix": "validationRule",
+      "xmlName": "ValidationRule"
+    },
+    {
+      "directoryName": "listViews",
+      "suffix": "listView",
+      "xmlName": "ListView"
+    },
+    {
+      "directoryName": "fieldSets",
+      "suffix": "fieldSet",
+      "xmlName": "FieldSet"
+    }
+  ]
+}
