@@ -11,6 +11,6 @@ export function findFilesByMetadataType(type: MetadataType, dir: string = "."): 
         throw Error(`${type} is not described. Probably not supported.`);
     }
     const directoryName: string = metadataObject.directoryName;
-    const suffix: string = metadataObject.suffix ? `\.${metadataObject.suffix}(-meta?)\.xml` : "";
+    const suffix: string = metadataObject.suffix ? `\.${metadataObject.suffix}(-meta\.xml)?` : "";
     return find.fileSync(new RegExp(`.*?/${directoryName}/.*?${suffix}`), dir);
 }
