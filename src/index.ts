@@ -39,3 +39,7 @@ export function writeMetadataXML(
 
 export * from "./metadata-types";
 export {OptionsV2} from "xml2js";
+
+export {MetadataDescribe, describeMetadata} from "./describe/describe-metadata";
+
+export {findFilesByMetadataType} from "./find-metadata";

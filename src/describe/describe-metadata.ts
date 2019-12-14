@@ -7,14 +7,14 @@ export interface MetadataDescribe {
     directoryName: string;
     inFolder: boolean;
     metaFile: boolean;
-    suffix: string;
+    suffix?: string;
     xmlName: string;
-    childXmlNames: any;
+    childXmlNames?: string | string[];
 }
 
 export function describeMetadata(metadata: MetadataType): MetadataDescribe | undefined {
     const customObject: MetadataDescribe = describeCustomObject();
-    if (customObject.childXmlNames.includes(metadata)) {
+    if (customObject.childXmlNames?.includes(metadata)) {
         return describeCustomObjectChild(metadata);
     }
     return getDescribe()?.find((it: MetadataDescribe) => it.xmlName === metadata);
